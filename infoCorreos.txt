@@ -1,0 +1,16 @@
+A continuacion se listan los archivos que dentro de sus rutinas se realiza el envío de correos
+
+
+/controllers
+agregaProveedorPagos.php
+reasignarUsuario.php
+registraSolicitud.php
+
+/pagos
+AceptarSolicitud.php
+AceptarSolicitudContabilidad.php
+AceptarSolicitudTesoreria.php
+cancelarSolicitudContabilidad.php
+cancelarSolicitudTesoreria.php
+rechazarSolicitud
+

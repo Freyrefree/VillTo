@@ -1,0 +1,47 @@
+/* tabla jqgrid */
+.ui-th-ltr{
+  font-size: 14px;
+  height: 5px;
+}
+.ui-jqgrid-labels{
+  background-color: #2471A3;
+  /* #85929E; */
+  /* background:#E5E8E8; */
+  color: #F2F2F2;
+}
+.table>thead>tr>th {
+  padding: 4px;
+}
+
+.table>thead>tr>th.active {
+   background-color: #2471A3;
+   /* #85929E; */
+   color: #F2F2F2;
+}
+.ui-search-input > input{
+  height: 25px;
+  font-size: 12px;
+  border-radius: 0px;
+}
+.ui-search-input{
+  height: 30px;
+  font-size: 14px;
+  margin-top: 0%;
+}
+.ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td {
+  font-size:14px;
+  height: 30px;
+}
+.ui-jqgrid .ui-jqgrid-htable .ui-th-div{
+  height: 40px;
+  margin-top: 0px;
+  display: inine-block;
+}
+/* .ui-jqgrid .ui-jqgrid-htable .ui-th-div{
+  height: 45px;
+  margin-top: -14px;
+  margin-bottom: -12px;
+  display: inine-block;
+  font-size: 15px;
+} */
+/* tabla jqgrid */
