@@ -1,9 +1,14 @@
 <?php
     include_once '../app/config.php'; //Modelo usuario
+    date_default_timezone_set('America/Mexico_City');
     #include_once 'Models/circuito.php'; //Modelo usuario
     #$circuito  = new Circuito();
     #define('URL', "http://localhost/JuliaTravelPagos/"); #representa [ ruta web ] 
     include_once str_replace(DS, "/", ROOT . 'Models/banco.php'); #Modelo bancos
+
+    
+
+
 
     if(!$_SESSION['_pid']){
         header('Location: '.URL.'login.php?e=n');
