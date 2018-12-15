@@ -129,8 +129,8 @@ $row = mysqli_fetch_array($answer);
     $mailcc = "soporte@aiko.com.mx";
     $namecc = 'Control';
 
-            //$receptor = 'dgutierrez@aiko.com.mx';
-            //$nombre = "Diego";
+        //$receptor = 'dgutierrez@aiko.com.mx';
+        //$nombre = "Diego";
     ######################################
 
     $nombreSolicitanteCorreo    =  utf8_encode($usuarioOBJ->get('nombre'))." ".utf8_encode($usuarioOBJ->get('app'))." ".utf8_encode($usuarioOBJ->get('apm'));
@@ -271,25 +271,42 @@ $row = mysqli_fetch_array($answer);
         <tr>
             <td colspan="2"><font color="#003366"><hr></font></td>
         </tr>'; 
-        if($banco!=""){
-            $html.='
-            <tr>  
-                <td class=""><font color="#003366">Banco:</font></td>
-                <td class="">'.$banco.'</td>
-            </tr>
-            <tr>  
-                <td class=""><font color="#003366">Cuenta:</font></td>
-                <td class="">'.$cuentaBanco.'</td>
-            </tr>
-            <tr>  
-                <td class=""><font color="#003366">Referencia:</font></td>
-                <td class="">'.$referencia1.'</td>
-            </tr>
-            <tr>  
-                <td class=""><font color="#003366">Clabe Interbancaria:</font></td>
-                <td class="">'.$clabeinter.'</td>
-            </tr>';
-        }
+        ## Validaciones para comprobar los campos que se registraron en la creaciond e la solicitud ##
+            
+                if ($banco!="") {
+
+                    $html.='
+                    <tr>  
+                        <td class=""><font color="#003366">Banco:</font></td>
+                        <td class="">'.$banco.'</td>
+                    </tr>';
+                }
+    
+    
+                if ($cuentaBanco!="") {
+                    $html.='<tr>  
+                        <td class=""><font color="#003366">Cuenta:</font></td>
+                        <td class="">'.$cuentaBanco.'</td>
+                    </tr>';
+                }
+    
+                if ($referencia1!="") {
+    
+                    $html.='<tr>  
+                        <td class=""><font color="#003366">Referencia:</font></td>
+                        <td class="">'.$referencia1.'</td>
+                    </tr>';
+                }
+    
+                if ($clabeinter!="") {
+    
+                    $html.='<tr>  
+                        <td class=""><font color="#003366">Clabe Interbancaria:</font></td>
+                        <td class="">'.$clabeinter.'</td>
+                    </tr>';
+                }
+    
+        ## *********************************************************************************** ##
         if($aba!=""){
             $html.='
             <tr>  
