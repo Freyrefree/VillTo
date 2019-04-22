@@ -669,24 +669,23 @@
         // multiselect: true,
         });
 
-          jQuery("#jqGrid").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : false, defaultSearch:"cn"});
+        jQuery("#jqGrid").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : false, defaultSearch:"cn"});
 
-$(".glyphicon-backward").addClass("fa fa-chevron-left");
-$(".fa-chevron-left").removeClass("glyphicon-backward");
+        $(".glyphicon-backward").addClass("fa fa-chevron-left");
+        $(".fa-chevron-left").removeClass("glyphicon-backward");
 
-$(".glyphicon-forward").addClass("fa fa-chevron-right");
-$(".fa-chevron-right").removeClass("glyphicon-forward");
+        $(".glyphicon-forward").addClass("fa fa-chevron-right");
+        $(".fa-chevron-right").removeClass("glyphicon-forward");
 
-$(".glyphicon-step-backward").addClass("fa fa-step-backward");
-$(".fa-step-backward").removeClass("glyphicon-step-backward");
+        $(".glyphicon-step-backward").addClass("fa fa-step-backward");
+        $(".fa-step-backward").removeClass("glyphicon-step-backward");
 
-$(".glyphicon-step-forward").addClass("fa fa-step-forward");
-$(".fa-step-forward").removeClass("glyphicon-step-forward");
+        $(".glyphicon-step-forward").addClass("fa fa-step-forward");
+        $(".fa-step-forward").removeClass("glyphicon-step-forward");
 
+        $(".ui-pg-selbox").removeClass("ui-pg-selbox");
 
-$(".ui-pg-selbox").removeClass("ui-pg-selbox");
-
-    $("#jqGridLog").jqGrid({
+        $("#jqGridLog").jqGrid({
             url:'../Controllers/listarLog.php?id=' + 1,
             datatype: "json",
             styleUI : 'Bootstrap',
@@ -699,15 +698,10 @@ $(".ui-pg-selbox").removeClass("ui-pg-selbox");
             ],
             loadonce: true,
             viewrecords: true,
-            scroll :true,
+            scroll: true,
             width: 750
             // autowidth: true
 
-
-           
-           
-           
-           
 
     });
     });

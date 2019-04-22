@@ -6,7 +6,7 @@
 	//define('ROOT', realpath(dirname(__FILE__)).DS); #representa [ ruta absoluta de la carpeta ]
 	define('ROOT', "C:\\xampp\htdocs\VillaToursPagos".DS); #representa [ ruta absoluta de la carpeta ]
 	//define('URL', "http://villatours.pagos.aiko.com.mx/"); #representa [ ruta web ]
-	define('URL', "http://localhost:8080/villaToursPagos/"); #representa [ ruta web ]
+	define('URL', "http://localhost/villaToursPagos/"); #representa [ ruta web ]
 	#Configuracion de rutas
 
 	

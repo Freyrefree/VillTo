@@ -11,12 +11,14 @@ $usuario = $_SESSION['_pnamefull'];
 
 #Recepcion de datos $_POST
 if (!$_POST) {
+
     header('Location: ' . URL . 'Administracion/proveedores.php');
     exit;
+
 }else{
+
+
     $envioCorreo = $_POST['envioCorreo'];
-
-
     $id_proveedor = $_POST['idproveedor'];
     $banco = $_POST['nombreBanco'];
     $num_cuenta = $_POST['numCuenta'];    
@@ -25,7 +27,6 @@ if (!$_POST) {
     $claveSAT = $_POST['claveSAT'];
     $codigoSantander = $_POST['codigoSantander'];
     $divisa = $_POST['divisa'];
-
 }
 #Recepcion de datos $_POST
 
